@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+    <body>
+        <p>Before the acript...</p>
+
+        <script>
+            alert ( "not a number" / 2 ); // Nan 計算上のエラー
+            alert ( 2 + 3 );
+
+            let str = 'Hello';
+            let phrase = `can embed ${str}`;
+            alert (phrase);
+
+            let isGreater = 4 > 1;
+            alert ( isGreater ); // true
+
+            let age = null;
+            alert ( age ); // null
+
+            let x;
+            alert ( x ); // undefined
+
+            alert ( typeof 0 ); // number
+            alert ( typeof true ); // boolean
+            alert ( typeof alert ); // function
+        </script>
+
+        <p>...After the script.</p>
+    </body>
+</html>
