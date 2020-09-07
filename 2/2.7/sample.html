@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+    <body>
+        <p>Before the acript...</p>
+
+        <script>
+            let value = true;
+            alert(typeof value);
+            let valueType = typeof value;
+            alert(valueType);
+
+            value = String(value);
+            alert(typeof value);
+
+            let str = "123";
+            alert(typeof str);
+
+            let num = Number(str);
+            alert(typeof num);
+
+
+            alert( Boolean("0") ); // true 非空文字は常にtrue
+            alert( Boolean(" ") ); // true
+            alert( Boolean("") ); // false
+        </script>
+
+        <p>...After the script.</p>
+    </body>
+</html>
