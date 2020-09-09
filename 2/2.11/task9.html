@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+    <body>
+        <p>Before the acript...</p>
+
+        <script>
+            let user = prompt( "What's there?", "" );
+
+            if ( user == 'Admin' ) {
+                let typePassword = prompt( "Password?", "" );
+                if ( typePassword == "TheMaster" ) {
+                    alert( "Welcome!" );
+                } else if ( typePassword == null ) {
+                    alert( "Canceled" );
+                } else {
+                    alert( "Wrong password" );
+                }
+            } else if ( user == null ) {
+                alert( "Canceled");
+            } else {
+                alert( "I don't know you." );
+            }
+        </script>
+
+        <p>...After the script.</p>
+    </body>
+</html>
