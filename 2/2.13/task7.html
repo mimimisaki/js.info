@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+    <body>
+        <p>Before the acript...</p>
+
+        <script>
+            let n = 10;
+
+            nextPrime:
+            for ( let i = 2; i <= n; i++ ) {
+                if ( let j = 2; j < i; j++ ) {
+                    if ( i % j == 0 ) continue nextPrime;
+                }
+
+                alert( i );
+            }
+        </script>
+
+        <p>...After the script.</p>
+    </body>
+</html>
