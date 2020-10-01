@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+    <body>
+        <p>Before the acript...</p>
+
+        <script>
+            function Accumulator(startingValue) {
+                this.value = startingValue;
+
+                this.read = function() {
+                    let addNumber = +prompt("How much to add?", "0");
+                    this.value += addNumber;
+                }
+            }
+        </script>
+
+        <p>...After the script.</p>
+    </body>
+</html>
