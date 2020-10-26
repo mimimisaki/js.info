@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+    <body>
+        <p>Before the acript...</p>
+
+        <script>
+            function sumInput() {
+                let numbers = [];
+                while (true) {
+                    let x = prompt("A number please?", "0");
+
+                    if (x === "" || x === null || !isFinite(x)) break;
+
+                    numbers.push(+x);
+                }
+
+                let sum = 0;
+                for (let number of numbers) {
+                    sum += number;
+                }
+
+                return sum;
+            }
+
+            alert( sumInput() );
+        </script>
+
+        <p>...After the script.</p>
+    </body>
+</html>

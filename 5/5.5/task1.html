@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+    <body>
+        <p>Before the acript...</p>
+
+        <script>
+            function camelize(str) {
+                arr = str.split("-");
+                let new_arr = arr.map(
+                    (word, index) => index == 0 ? word : word[0].toUpperCase() + word.slice(1));
+                new_str = new_arr.join("");
+                return new_str;
+            }
+
+            alert(camelize("background-color"))
+        </script>
+
+        <p>...After the script.</p>
+    </body>
+</html>

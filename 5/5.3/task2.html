@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+    <body>
+        <p>Before the acript...</p>
+
+        <script>
+            function checkSpam(str) {
+                let newStr = str.toLowerCase();
+                // if (newStr.includes("viagra") || newStr.includes("xxx")) {
+                //     return true;
+                // } else {
+                //     return false;
+                // }
+
+                return newStr.includes("viagra") || newStr.includes("xxx");
+            }
+
+            alert( checkSpam('buy ViAgRA now') ); // true
+            alert( checkSpam('free xxxxx') ); // true
+            alert( checkSpam("innocent rabbit") ); // false
+
+        </script>
+
+        <p>...After the script.</p>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+    <body>
+        <p>Before the acript...</p>
+
+        <script>
+            function ucFirst(str) {
+                if (!str) {
+                    return str;
+                } else {
+                    let newStr = str[0].toUpperCase() + str.slice(1);
+                    return newStr;
+                }
+            }
+
+            ucFirst("john");
+
+        </script>
+
+        <p>...After the script.</p>
+    </body>
+</html>

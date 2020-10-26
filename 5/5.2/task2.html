@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html>
+    <body>
+        <p>Before the acript...</p>
+
+        <script>
+            alert( 6.35.toFixed(20) ); // 6.34999999999999964473
+
+            alert( (6.35 * 10).toFixed(20) ); // 63.50000000000000000000
+
+            // toFixedの結果は文字列なのでMath.roundを使う
+            alert( Math.round(6.35 * 10) / 10 ); // 6.4
+        </script>
+
+        <p>...After the script.</p>
+    </body>
+</html>

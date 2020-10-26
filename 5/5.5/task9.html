@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Before the acript...</p>
+
+    <script>
+      let john = { name: "John", age: 25 };
+      let pete = { name: "Pete", age: 30 };
+      let mary = { name: "Mary", age: 28 };
+
+      let arr = [john, pete, mary];
+
+      function sortByName(x) {
+        x.sort((a, b) => {
+          if (a.name > b.name) {
+            return -1;
+          }
+          if (a.name > b.name) {
+            return 1;
+          } else {
+            return 0;
+          }
+        });
+        // x.sort((a, b) => b.name > a.name ? 1 : -1);
+      }
+
+      sortByName(arr);
+
+      // now: [john, mary, pete]
+      alert(arr[1].name); // Mary
+    </script>
+
+    <p>...After the script.</p>
+  </body>
+</html>

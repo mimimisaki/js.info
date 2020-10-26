@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+    <body>
+        <p>Before the acript...</p>
+
+        <script>
+            function copySorted(arr) {
+                return arr.slice().sort();
+            }
+
+            let x = ["HTML", "JavaScript", "CSS"];
+
+            let sorted = copySorted(x);
+
+            alert( sorted ); // CSS, HTML, JavaScript
+            alert( x ); // HTML, JavaScript, CSS (no changes)
+        </script>
+
+        <p>...After the script.</p>
+    </body>
+</html>
