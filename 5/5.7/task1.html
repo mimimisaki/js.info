@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Before the acript...</p>
+
+    <script>
+      function unique(arr) {
+        return Array.from(new Set(arr));
+      }
+
+      let values = [
+        "Hare",
+        "Krishna",
+        "Hare",
+        "Krishna",
+        "Krishna",
+        "Krishna",
+        "Hare",
+        "Hare",
+        ":-O",
+      ];
+
+      alert(unique(values)); // Hare, Krishna, :-O
+    </script>
+
+    <p>...After the script.</p>
+  </body>
+</html>
