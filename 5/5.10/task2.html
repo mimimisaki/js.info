@@ -5,6 +5,24 @@
     <p>Before the acript...</p>
 
     <script>
+        let salaries = {
+            "John": 100,
+            "Pete": 300,
+            "Mary": 250
+        };
+
+        function topSalary(salaries) {
+            if (!salaries) return null;
+            let topName = '';
+            let topValue = 0;
+            for (let [name, value] of Object.entries(salaries)) {
+                if (topValue < value) {
+                    topValue = value
+                    topName = name
+                }
+            }
+            return topName;
+        }
     </script>
 
     <p>...After the script.</p>
