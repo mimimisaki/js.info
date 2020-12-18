@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p>Before the acript...</p>
+
+    <script>
+        // for loop
+        // function sumTo(x) {
+        //     let sum = 0;
+        //     for (let i = 1; i <= x; i++) {
+        //         sum += i
+        //     }
+        //     return sum
+        // }
+
+        // 再帰
+        function sumTo(x) {
+            return x === 1 ? x : (x + sumTo(x - 1))
+        }
+
+        // 等差数列
+        // function sumTo(x) {
+        //     return x * (x + 1) / 2
+        // }
+
+        alert(sumTo(1))
+        alert(sumTo(2))
+        alert(sumTo(3))
+        alert(sumTo(4))
+        alert(sumTo(100))
+        alert(sumTo(100000)) // max stack
+    </script>
+
+    <p>...After the script.</p>
+</body>
+
+</html>
