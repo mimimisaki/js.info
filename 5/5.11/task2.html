@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <p>Before the acript...</p>
+
+  <script>
+    let date = new Date(2012, 0, 3);  // 3 Jan 2012
+
+    function getWeekDay(date) {
+      let days = ['SU', 'MO', 'TU', 'WE', 'TH', 'FR', 'SA'];
+      return days[date.getDay()];
+    }
+
+    alert(getWeekDay(date));        // "TU" と表示される
+  </script>
+
+  <p>...After the script.</p>
+</body>
+
+</html>
