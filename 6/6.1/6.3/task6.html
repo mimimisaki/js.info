@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p>Before the acript...</p>
+
+    <script>
+        function sum(x) {
+            return function (y) {
+                return x + y
+            }
+        }
+
+        alert(sum(1)(2)); // 3
+        alert(sum(5)(-1)); // 4
+    </script>
+
+    <p>...After the script.</p>
+</body>
+
+</html>
